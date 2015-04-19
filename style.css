@@ -1,0 +1,141 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#bg-tint {
+    position: absolute;
+    background: #111;
+    opacity: 0.97;
+    z-index: 10; 
+}
+
+*{
+    -webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+
+/* Rules below not implemented in browsers yet */
+-o-user-select: none;
+user-select: none;
+}
+
+#first-line{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  color: #FDFDFD;
+  z-index: 15;
+  left: 50%;
+  top: 30%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -450px;
+  letter-spacing: 3px;
+  width: 900px;
+}
+
+#second-line{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 64px;
+  font-weight: 100;
+  color: #FDFDFD;
+  z-index: 15;
+  left: 50%;
+  top: 40%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -450px;
+  letter-spacing: 4px;
+  width: 900px;
+}
+
+
+#connect{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  color: #FDFDFD;
+  z-index: 15;
+  left: 50%;
+  top: 60%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -250px;
+  letter-spacing: 4px;
+  width: 500px;
+  height: 60px;
+  padding: 28px 0 0 0;
+  border: 2px solid rgb(4, 120, 176);
+}
+
+#connect:hover {
+  background-color: rgb(4, 120, 176);
+  border: 2px solid rgb(4, 120, 176);
+  color: #DDDDDD;
+}
+
+
+@media (max-width: 904px) {
+#first-line{
+    position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #FDFDFD;
+  z-index: 15;
+  left: 50%;
+  top: 20%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -150px;
+  letter-spacing: 3px;
+  width: 300px;
+}
+
+#second-line{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 100;
+  color: #FDFDFD;
+  z-index: 15;
+  left: 50%;
+  top: 40%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -200px;
+  letter-spacing: 4px;
+  width: 400px;
+}
+
+
+#connect{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  color: #FDFDFD;
+  z-index: 15;
+  left: 50%;
+  top: 65%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -128px;
+  letter-spacing: 4px;
+  width: 200px;
+  height: 60px;
+  padding: 28px 24px;
+  border: 2px solid rgb(4, 120, 176);
+  background-color: rgb(4, 120, 176);
+}
+
+#connect:hover {
+  border: 2px solid rgb(4, 120, 176);
+  color: #DDDDDD;
+}
+	}
