@@ -29,6 +29,7 @@ $(window).keydown(function(fn) {
 });
 
 $(window).on('click', function(fn){
+   if(isAndroid) $('#bg-video')[0].play();
    clicks--;
    if(clicks <= 0){
        switchVolume();
@@ -48,7 +49,7 @@ function switchVolume(){
 function chooseSentence(){
     var sentences = ['Software engineering isn\'t for the weak hearted', 
     'Software development needs an engineer',
-    'Don\'t throw your code away in the wrong hands',
+    'Don\'t throw your code away into the wrong hands',
     'Why a computer scientist?',
     'Trust me'];
 
@@ -58,9 +59,10 @@ function chooseSentence(){
 
 function disableVideoAndroid(){
     var ua = navigator.userAgent.toLowerCase();
-    var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-    if(isAndroid) {
-	$('body').css({background: 'url(snap.png) no-repeat center fixed'});
+    isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+    isIOS = /(iPad|iPhone|iPod)/g.test(ua);
+    if(isIOS) {
+        $('body').css({background: 'url(snap.png) no-repeat center center'});
         $('#bg-video').remove();
     }
 }
