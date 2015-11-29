@@ -55,32 +55,62 @@ span{
     width: 900px;
 }
 
-
 #connect{
+    border: 2px solid rgb(4, 120, 176);
+    font-size: 24px;
+    top: 60%;
+    padding: 28px 0 0 0;
+    width: 500px;
+    height: 60px;
+    margin-left: -250px;
+    left: 50%;
+}
+
+#connect_angel{
+    /*border: 2px solid #fff;*/
+    top: 90%;
+    width: 250px;
+    height: 30px;
+    margin-left:-125px;
+    font-size: 18px;
+    left: 80%;
+    padding: 8px 0 0px 0;
+}
+
+#nasa_blog{
+    /*border: 2px solid #fff;*/
+    top: 90%;
+    width: 250px;
+    height: 30px;
+    margin-left:-125px;
+    font-size: 18px;
+    left: 20%;
+    padding: 8px 0 0px 0;
+}
+
+#nasa {
+    display: inline-block;
+    content:url("nasa.png");
+    width: 30px;
+    padding-right: 15px;
+}
+
+.btn {
     position: absolute;
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
     font-weight: 100;
     color: #FDFDFD;
     z-index: 15;
-    left: 50%;
-    top: 60%;
     text-transform: uppercase;
     text-align: center;
-    margin-left: -250px;
     letter-spacing: 4px;
-    width: 500px;
-    height: 60px;
-    padding: 28px 0 0 0;
-    border: 2px solid rgb(4, 120, 176);
 }
 
-#connect:hover {
+.btn:hover {
     background-color: rgb(4, 120, 176);
     border: 2px solid rgb(4, 120, 176);
     color: #DDDDDD;
 }
-
 
 @media (max-width: 904px) {
     #first-line{
@@ -114,32 +144,56 @@ span{
         letter-spacing: 3px;
         width: 350px;
     }
-
-
-    #connect{
+    
+    .btn{
         position: absolute;
         font-family: 'Raleway', sans-serif;
-        font-size: 24px;
         font-weight: 100;
         color: #FDFDFD;
         z-index: 15;
-        left: 50%;
-        top: 65%;
         text-transform: uppercase;
         text-align: center;
-        margin-left: -128px;
-        letter-spacing: 4px;
-        width: 200px;
-        height: 60px;
-        padding: 28px 24px;
-        border: 2px solid rgb(4, 120, 176);
-        background-color: rgb(4, 120, 176);
+        letter-spacing: 4px;        
     }
 
-    #connect:hover {
+    .btn:hover {
         border: 2px solid rgb(4, 120, 176);
         color: #DDDDDD;
     }
+   
+    #connect{
+        border: 2px solid rgb(4, 120, 176);
+        font-size: 24px;
+        top: 65%;
+        width: 200px;
+        height: 60px;
+        padding: 28px 24px;
+        margin-left: -128px;
+        left: 50%;
+        background-color: rgb(4, 120, 176);
+    }
+
+    #connect_angel{
+        /*border: 2px solid #fff;*/
+        font-size: 12px;
+        top: 90%;
+        width: 130px;
+        height: 15px;
+        padding: 9px 1px;
+        left: 85%;
+    }
+
+    #nasa_blog{
+        /*border: 2px solid #fff;*/
+        font-size: 12px;
+        top: 90%;
+        width: 130px;
+    height: 15px;
+    padding: 9px 1px;
+    margin-left: -40px;
+        left: 15%;
+    }
+
 }
 
 @media (max-width: 904px) and (orientation:landscape) {
