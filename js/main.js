@@ -47,7 +47,7 @@ $(window).keydown(function(fn) {
 $(window).on('click', function(fn) {
     if (isAndroid)
         $('#bg-video')[0].play();
-    clicks--;
+    updateClicks();
     if (clicks <= 0) {
         switchVolume();
     }
@@ -60,13 +60,31 @@ $(document).on('pageinit', function(event){
     });
 });
 
+
+function updateClicks(){
+    
+        clicks--;
+    if(clicks>1){
+        showText("You are " + clicks + " click(s) away");
+    }
+}
+
+function showText(text){
+        $('#hint').html(text);
+
+        $("#hint").show();
+        $("#hint").fadeOut(1000);
+}
+
 function switchVolume() {
     if (vol == false) {
         $('#bg-video').prop("volume", "1.0");
         vol = true;
+        showText("Resume")
     } else {
         $('#bg-video').prop("volume", "0.0");
         vol = false;
+        showText("Muted")
     }
 }
 
